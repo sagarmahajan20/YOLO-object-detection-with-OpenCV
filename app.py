@@ -9,6 +9,10 @@ app.config["DEBUG"] = True
 
 from flask import request
 
+@app.route('/', methods=['GET'])
+def get_tas():
+	return 'hello sagar'
+
 @app.route('/', methods=['GET']) #<string:url>
 def get_task():
 	url = request.args.get('url') 
