@@ -4,7 +4,7 @@ import numpy as np
 import glob
 import random
 
-app = flask.Flask(_name_)
+app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 from flask import request
